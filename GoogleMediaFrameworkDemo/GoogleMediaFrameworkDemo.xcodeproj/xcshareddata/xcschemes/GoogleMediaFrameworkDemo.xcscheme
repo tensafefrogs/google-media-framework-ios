@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F2EA1CCC9C7885B013598134"
+               BlueprintIdentifier = "D5DD0B592A703D5AF05C7A36"
                BuildableName = "libPods.a"
                BlueprintName = "Pods"
                ReferencedContainer = "container:Pods/Pods.xcodeproj">
@@ -47,7 +47,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "4CAD3F8F17BD4703008C6D28"
-               BuildableName = "GoogleMediaFrameworkDemoTests.octest"
+               BuildableName = "GoogleMediaFrameworkDemoTests.xctest"
                BlueprintName = "GoogleMediaFrameworkDemoTests"
                ReferencedContainer = "container:GoogleMediaFrameworkDemo.xcodeproj">
             </BuildableReference>

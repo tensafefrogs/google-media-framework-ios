@@ -141,12 +141,14 @@
       [self.videoPlayerController.playerOverlayView showPlayButton];
       [self showPlayerControls];
       break;
+    case kIMAAdEvent_TAPPED:
+      [self togglePlayerControls];
+      break;
     case kIMAAdEvent_ALL_ADS_COMPLETED:
       // When all ads are done, give control back to the video player.
       [self relinquishControlToVideoPlayer];
       [self.adsManager destroy];
-      // TODO: destroy loader (pending IMA SDK bugfix)
-      //[self.adsLoader destroy];
+      self.adsManager = nil;
       break;
     default:
       break;
@@ -157,6 +159,12 @@
   GMFPlayerOverlayViewController *overlayVc =
       (GMFPlayerOverlayViewController *)self.videoPlayerController.videoPlayerOverlayViewController;
   [overlayVc showPlayerControlsAnimated:YES];
+}
+
+- (void)togglePlayerControls {
+  GMFPlayerOverlayViewController *overlayVc =
+  (GMFPlayerOverlayViewController *)self.videoPlayerController.videoPlayerOverlayViewController;
+  [overlayVc togglePlayerControlsVisibility];
 }
 
 // Process ad playing errors.
@@ -285,6 +293,12 @@
     case kIMAAdEvent_STARTED:
       // Ad has started.
       return @"Ad Started";
+    case kIMAAdEvent_TAPPED:
+      return @"Ad surface tapped";
+    case kIMAAdEvent_SKIPPED:
+      return @"Ad skipped";
+    case kIMAAdEvent_AD_BREAK_READY:
+      return @"Ad Break Ready";
     default:
       return @"Invalid Error type";
   }

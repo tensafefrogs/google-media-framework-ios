@@ -304,9 +304,9 @@
                                   summary:@""
                                  adTagURL:nil],
       [[VideoData alloc] initWithVideoURL:@"http://googleimadev-vh.akamaihd.net/i/big_buck_bunny/bbb-,480p,720p,1080p,.mov.csmil/master.m3u8"
-                                    title:@"Skippable preroll"
+                                    title:@"test"
                                   summary:@""
-                                 adTagURL:@"http://pubads.g.doubleclick.net/gampad/ads?sz=400x300&iu=%2F6062%2Fgmf_demo&ciu_szs&impl=s&gdfp_req=1&env=vp&output=xml_vast3&unviewed_position_start=1&url=[referrer_url]&correlator=[timestamp]&cust_params=gmf_format%3Dskip"],
+                                 adTagURL:@"http://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=/20461054/DramaFever_Mobile/iOS&ciu_szs&impl=s&gdfp_req=1&env=vp&output=xml_vast2&unviewed_position_start=1&url=[referrer_url]&description_url=[description_url]&correlator=[timestamp]&cmsid=294&vid=4480.1&cust_params=sid%3D4480%26bl%3DChinese%26network%3DSETTV%26m_idfa%3D4372518E-DE6F-4F8B-911B-2A785A0C83E6%26m_lat%3D40.006170%26m_long%3D-75.261680%26m_ip%3D10.1.10.34&"],
       [[VideoData alloc] initWithVideoURL:@"http://googleimadev-vh.akamaihd.net/i/big_buck_bunny/bbb-,480p,720p,1080p,.mov.csmil/master.m3u8"
                                     title:@"Unskippable preroll"
                                   summary:@""
@@ -314,7 +314,7 @@
       [[VideoData alloc] initWithVideoURL:@"http://googleimadev-vh.akamaihd.net/i/big_buck_bunny/bbb-,480p,720p,1080p,.mov.csmil/master.m3u8"
                                     title:@"Adrules (Preroll and ad breaks at 5s, 10s, 15s)"
                                   summary:@""
-                                 adTagURL:@"http://pubads.g.doubleclick.net/gampad/ads?sz=400x300&iu=%2F6062%2Fgmf_demo&ciu_szs&impl=s&gdfp_req=1&env=vp&output=xml_vast3&unviewed_position_start=1&url=[referrer_url]&correlator=[timestamp]&ad_rule=1&cmsid=11924&vid=cWCkSYdFlU0&cust_params=gmf_format%3Dstd%2Cskip"],
+                                 adTagURL:@"http://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=/124319096/external/ad_rule_samples&ciu_szs=300x250&ad_rule=1&impl=s&gdfp_req=1&env=vp&output=xml_vmap1&unviewed_position_start=1&cust_params=sample_ar%3Dpremidpostpod&cmsid=496&vid=short_onecue&correlator=[timestamp]"],
     ];
   }
 }

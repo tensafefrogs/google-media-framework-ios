@@ -81,7 +81,7 @@
 		4CAD3F7C17BD4703008C6D28 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		4CAD3F7E17BD4703008C6D28 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		4CAD3F8017BD4703008C6D28 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		4CAD3F9017BD4703008C6D28 /* GoogleMediaFrameworkDemoTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoogleMediaFrameworkDemoTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CAD3F9017BD4703008C6D28 /* GoogleMediaFrameworkDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoogleMediaFrameworkDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CAD3F9917BD4704008C6D28 /* GoogleMediaFrameworkTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleMediaFrameworkTests-Info.plist"; sourceTree = "<group>"; };
 		4CAD3F9B17BD4704008C6D28 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4CAD3F9D17BD4704008C6D28 /* GoogleMediaFrameworkDemoTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GoogleMediaFrameworkDemoTests.h; sourceTree = "<group>"; };
@@ -163,7 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				4CAD3F6717BD4703008C6D28 /* GoogleMediaFrameworkDemo.app */,
-				4CAD3F9017BD4703008C6D28 /* GoogleMediaFrameworkDemoTests.octest */,
+				4CAD3F9017BD4703008C6D28 /* GoogleMediaFrameworkDemoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -284,7 +284,7 @@
 			);
 			name = GoogleMediaFrameworkDemoTests;
 			productName = GoogleMediaFrameworkDemoTests;
-			productReference = 4CAD3F9017BD4703008C6D28 /* GoogleMediaFrameworkDemoTests.octest */;
+			productReference = 4CAD3F9017BD4703008C6D28 /* GoogleMediaFrameworkDemoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -297,6 +297,11 @@
 				LastTestingUpgradeCheck = 0600;
 				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = Google;
+				TargetAttributes = {
+					4CAD3F6617BD4703008C6D28 = {
+						DevelopmentTeam = EQHXZ8M8AV;
+					};
+				};
 			};
 			buildConfigurationList = 4CAD3F6217BD4703008C6D28 /* Build configuration list for PBXProject "GoogleMediaFrameworkDemo" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -483,6 +488,7 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -517,6 +523,7 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -548,7 +555,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "B218B3A1-E07D-44F2-AA69-6739FC0F6D19";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -567,7 +574,7 @@
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "B218B3A1-E07D-44F2-AA69-6739FC0F6D19";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
